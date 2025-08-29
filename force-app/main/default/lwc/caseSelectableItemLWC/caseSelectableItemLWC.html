@@ -1,0 +1,15 @@
+<template>
+    <!-- Button to create new case once account Id is selected -->
+    <div class="slds-m-top_large">
+        <vlocity_cmt-button lwc:if={accountId} variant="brand" label="Create New Case" onclick={openNewCaseModal}>
+        </vlocity_cmt-button>
+    </div>
+    <c-cf-sample-selectable-item lwc:if={accountId} record-id={accountId}></c-cf-sample-selectable-item>
+    <!-- Modal to create new case -->
+    <vlocity_cmt-modal lwc:if={prefill} title="Create New Case" size="large">
+        <div slot="content">
+            <c-sample-create-case-english lwc:if={showOS} layout="lightning"
+                prefill={prefill}></c-sample-create-case-english>
+        </div>
+    </vlocity_cmt-modal>
+    </template>

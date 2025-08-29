@@ -1,0 +1,25 @@
+.fab {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 1000;
+}
+
+.fab-button {
+    background-color: #0070d2; /* Azul Salesforce */
+    border: none;
+    border-radius: 4px; /* Arredondado leve, mas ainda quadrado */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+    padding: 0;
+}
+
+.fab-button lightning-icon {
+    --slds-c-icon-color-foreground-default: white;
+    --slds-c-icon-size: 16px; /* controla o tamanho do ícone */
+}

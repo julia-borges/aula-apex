@@ -1,5 +1,8 @@
 <template>
     <lightning-card>
-        <lightning-input type="text" label="Digite seu nome: "></lightning-input>
+        <lightning-input type="text" placeholder="Digite seu nome:" value={nome} onchange={guardar}></lightning-input>
     </lightning-card>
+
+    <p>Bem-vindo {nome}!</p>
+
 </template>
